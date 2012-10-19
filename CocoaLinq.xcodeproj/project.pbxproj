@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C2A3068163172C500B185FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A3067163172C500B185FF /* Cocoa.framework */; };
+		4C2A3072163172C500B185FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C2A3070163172C500B185FF /* InfoPlist.strings */; };
+		4C2A307E163172C500B185FF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A307D163172C500B185FF /* SenTestingKit.framework */; };
+		4C2A307F163172C500B185FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A3067163172C500B185FF /* Cocoa.framework */; };
+		4C2A3082163172C500B185FF /* CocoaLinq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A3064163172C500B185FF /* CocoaLinq.framework */; };
+		4C2A3088163172C500B185FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C2A3086163172C500B185FF /* InfoPlist.strings */; };
+		4C2A308B163172C500B185FF /* CocoaLinqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A308A163172C500B185FF /* CocoaLinqTests.m */; };
+		4C2A30971631730300B185FF /* LinqEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30951631730300B185FF /* LinqEnumerator.h */; };
+		4C2A30981631730300B185FF /* LinqEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30961631730300B185FF /* LinqEnumerator.m */; };
+		4C2A30991631730300B185FF /* LinqEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30961631730300B185FF /* LinqEnumerator.m */; };
+		4C2A309B1631734400B185FF /* IEnumeratorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A309A1631734400B185FF /* IEnumeratorDelegate.h */; };
+		4C2A309E163173CA00B185FF /* PredicateEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A309C163173CA00B185FF /* PredicateEnumerator.h */; };
+		4C2A309F163173CA00B185FF /* PredicateEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A309D163173CA00B185FF /* PredicateEnumerator.m */; };
+		4C2A30A0163173CA00B185FF /* PredicateEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A309D163173CA00B185FF /* PredicateEnumerator.m */; };
+		4C2A30A2163173E400B185FF /* Structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30A1163173E400B185FF /* Structs.h */; };
+		4C2A30A51631745900B185FF /* SelectorEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30A31631745900B185FF /* SelectorEnumerator.h */; };
+		4C2A30A61631745900B185FF /* SelectorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30A41631745900B185FF /* SelectorEnumerator.m */; };
+		4C2A30A71631745900B185FF /* SelectorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30A41631745900B185FF /* SelectorEnumerator.m */; };
+		4C2A30AA163174A400B185FF /* IEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30A8163174A400B185FF /* IEnumerable.h */; };
+		4C2A30AB163174A400B185FF /* IEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30A9163174A400B185FF /* IEnumerable.m */; };
+		4C2A30AC163174A400B185FF /* IEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30A9163174A400B185FF /* IEnumerable.m */; };
+		4C2A30AF1631754300B185FF /* NSArray+Linq.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30AD1631754300B185FF /* NSArray+Linq.h */; };
+		4C2A30B01631754300B185FF /* NSArray+Linq.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30AE1631754300B185FF /* NSArray+Linq.m */; };
+		4C2A30B11631754300B185FF /* NSArray+Linq.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30AE1631754300B185FF /* NSArray+Linq.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C2A3080163172C500B185FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C2A305A163172C500B185FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C2A3063163172C500B185FF;
+			remoteInfo = CocoaLinq;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C2A3064163172C500B185FF /* CocoaLinq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLinq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2A3067163172C500B185FF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4C2A306A163172C500B185FF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4C2A306B163172C500B185FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4C2A306C163172C500B185FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C2A306F163172C500B185FF /* CocoaLinq-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaLinq-Info.plist"; sourceTree = "<group>"; };
+		4C2A3071163172C500B185FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C2A3073163172C500B185FF /* CocoaLinq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaLinq-Prefix.pch"; sourceTree = "<group>"; };
+		4C2A307C163172C500B185FF /* CocoaLinqTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaLinqTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2A307D163172C500B185FF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4C2A3085163172C500B185FF /* CocoaLinqTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaLinqTests-Info.plist"; sourceTree = "<group>"; };
+		4C2A3087163172C500B185FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C2A3089163172C500B185FF /* CocoaLinqTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaLinqTests.h; sourceTree = "<group>"; };
+		4C2A308A163172C500B185FF /* CocoaLinqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaLinqTests.m; sourceTree = "<group>"; };
+		4C2A30951631730300B185FF /* LinqEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinqEnumerator.h; sourceTree = "<group>"; };
+		4C2A30961631730300B185FF /* LinqEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqEnumerator.m; sourceTree = "<group>"; };
+		4C2A309A1631734400B185FF /* IEnumeratorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEnumeratorDelegate.h; sourceTree = "<group>"; };
+		4C2A309C163173CA00B185FF /* PredicateEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateEnumerator.h; sourceTree = "<group>"; };
+		4C2A309D163173CA00B185FF /* PredicateEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateEnumerator.m; sourceTree = "<group>"; };
+		4C2A30A1163173E400B185FF /* Structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Structs.h; sourceTree = "<group>"; };
+		4C2A30A31631745900B185FF /* SelectorEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorEnumerator.h; sourceTree = "<group>"; };
+		4C2A30A41631745900B185FF /* SelectorEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorEnumerator.m; sourceTree = "<group>"; };
+		4C2A30A8163174A400B185FF /* IEnumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEnumerable.h; sourceTree = "<group>"; };
+		4C2A30A9163174A400B185FF /* IEnumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEnumerable.m; sourceTree = "<group>"; };
+		4C2A30AD1631754300B185FF /* NSArray+Linq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Linq.h"; sourceTree = "<group>"; };
+		4C2A30AE1631754300B185FF /* NSArray+Linq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Linq.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C2A3060163172C500B185FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2A3068163172C500B185FF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2A3078163172C500B185FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2A307E163172C500B185FF /* SenTestingKit.framework in Frameworks */,
+				4C2A307F163172C500B185FF /* Cocoa.framework in Frameworks */,
+				4C2A3082163172C500B185FF /* CocoaLinq.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C2A3058163172C500B185FF = {
+			isa = PBXGroup;
+			children = (
+				4C2A306D163172C500B185FF /* CocoaLinq */,
+				4C2A3083163172C500B185FF /* CocoaLinqTests */,
+				4C2A3066163172C500B185FF /* Frameworks */,
+				4C2A3065163172C500B185FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C2A3065163172C500B185FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A3064163172C500B185FF /* CocoaLinq.framework */,
+				4C2A307C163172C500B185FF /* CocoaLinqTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C2A3066163172C500B185FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A3067163172C500B185FF /* Cocoa.framework */,
+				4C2A307D163172C500B185FF /* SenTestingKit.framework */,
+				4C2A3069163172C500B185FF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C2A3069163172C500B185FF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A306A163172C500B185FF /* AppKit.framework */,
+				4C2A306B163172C500B185FF /* CoreData.framework */,
+				4C2A306C163172C500B185FF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4C2A306D163172C500B185FF /* CocoaLinq */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A3094163172E100B185FF /* Enumerator */,
+				4C2A306E163172C500B185FF /* Supporting Files */,
+				4C2A30A1163173E400B185FF /* Structs.h */,
+				4C2A30A8163174A400B185FF /* IEnumerable.h */,
+				4C2A30A9163174A400B185FF /* IEnumerable.m */,
+				4C2A30AD1631754300B185FF /* NSArray+Linq.h */,
+				4C2A30AE1631754300B185FF /* NSArray+Linq.m */,
+			);
+			path = CocoaLinq;
+			sourceTree = "<group>";
+		};
+		4C2A306E163172C500B185FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A306F163172C500B185FF /* CocoaLinq-Info.plist */,
+				4C2A3070163172C500B185FF /* InfoPlist.strings */,
+				4C2A3073163172C500B185FF /* CocoaLinq-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C2A3083163172C500B185FF /* CocoaLinqTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A3089163172C500B185FF /* CocoaLinqTests.h */,
+				4C2A308A163172C500B185FF /* CocoaLinqTests.m */,
+				4C2A3084163172C500B185FF /* Supporting Files */,
+			);
+			path = CocoaLinqTests;
+			sourceTree = "<group>";
+		};
+		4C2A3084163172C500B185FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A3085163172C500B185FF /* CocoaLinqTests-Info.plist */,
+				4C2A3086163172C500B185FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C2A3094163172E100B185FF /* Enumerator */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A30951631730300B185FF /* LinqEnumerator.h */,
+				4C2A30961631730300B185FF /* LinqEnumerator.m */,
+				4C2A309A1631734400B185FF /* IEnumeratorDelegate.h */,
+				4C2A309C163173CA00B185FF /* PredicateEnumerator.h */,
+				4C2A309D163173CA00B185FF /* PredicateEnumerator.m */,
+				4C2A30A31631745900B185FF /* SelectorEnumerator.h */,
+				4C2A30A41631745900B185FF /* SelectorEnumerator.m */,
+			);
+			name = Enumerator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C2A3061163172C500B185FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2A30971631730300B185FF /* LinqEnumerator.h in Headers */,
+				4C2A309B1631734400B185FF /* IEnumeratorDelegate.h in Headers */,
+				4C2A309E163173CA00B185FF /* PredicateEnumerator.h in Headers */,
+				4C2A30A2163173E400B185FF /* Structs.h in Headers */,
+				4C2A30A51631745900B185FF /* SelectorEnumerator.h in Headers */,
+				4C2A30AA163174A400B185FF /* IEnumerable.h in Headers */,
+				4C2A30AF1631754300B185FF /* NSArray+Linq.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4C2A3063163172C500B185FF /* CocoaLinq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C2A308E163172C500B185FF /* Build configuration list for PBXNativeTarget "CocoaLinq" */;
+			buildPhases = (
+				4C2A305F163172C500B185FF /* Sources */,
+				4C2A3060163172C500B185FF /* Frameworks */,
+				4C2A3061163172C500B185FF /* Headers */,
+				4C2A3062163172C500B185FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaLinq;
+			productName = CocoaLinq;
+			productReference = 4C2A3064163172C500B185FF /* CocoaLinq.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4C2A307B163172C500B185FF /* CocoaLinqTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C2A3091163172C500B185FF /* Build configuration list for PBXNativeTarget "CocoaLinqTests" */;
+			buildPhases = (
+				4C2A3077163172C500B185FF /* Sources */,
+				4C2A3078163172C500B185FF /* Frameworks */,
+				4C2A3079163172C500B185FF /* Resources */,
+				4C2A307A163172C500B185FF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C2A3081163172C500B185FF /* PBXTargetDependency */,
+			);
+			name = CocoaLinqTests;
+			productName = CocoaLinqTests;
+			productReference = 4C2A307C163172C500B185FF /* CocoaLinqTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C2A305A163172C500B185FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Michael Crosby";
+			};
+			buildConfigurationList = 4C2A305D163172C500B185FF /* Build configuration list for PBXProject "CocoaLinq" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C2A3058163172C500B185FF;
+			productRefGroup = 4C2A3065163172C500B185FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C2A3063163172C500B185FF /* CocoaLinq */,
+				4C2A307B163172C500B185FF /* CocoaLinqTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C2A3062163172C500B185FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2A3072163172C500B185FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2A3079163172C500B185FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2A3088163172C500B185FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C2A307A163172C500B185FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C2A305F163172C500B185FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2A30981631730300B185FF /* LinqEnumerator.m in Sources */,
+				4C2A309F163173CA00B185FF /* PredicateEnumerator.m in Sources */,
+				4C2A30A61631745900B185FF /* SelectorEnumerator.m in Sources */,
+				4C2A30AB163174A400B185FF /* IEnumerable.m in Sources */,
+				4C2A30B01631754300B185FF /* NSArray+Linq.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2A3077163172C500B185FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2A308B163172C500B185FF /* CocoaLinqTests.m in Sources */,
+				4C2A30991631730300B185FF /* LinqEnumerator.m in Sources */,
+				4C2A30A0163173CA00B185FF /* PredicateEnumerator.m in Sources */,
+				4C2A30A71631745900B185FF /* SelectorEnumerator.m in Sources */,
+				4C2A30AC163174A400B185FF /* IEnumerable.m in Sources */,
+				4C2A30B11631754300B185FF /* NSArray+Linq.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C2A3081163172C500B185FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C2A3063163172C500B185FF /* CocoaLinq */;
+			targetProxy = 4C2A3080163172C500B185FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C2A3070163172C500B185FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C2A3071163172C500B185FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C2A3086163172C500B185FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C2A3087163172C500B185FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C2A308C163172C500B185FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4C2A308D163172C500B185FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4C2A308F163172C500B185FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaLinq/CocoaLinq-Prefix.pch";
+				INFOPLIST_FILE = "CocoaLinq/CocoaLinq-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		4C2A3090163172C500B185FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaLinq/CocoaLinq-Prefix.pch";
+				INFOPLIST_FILE = "CocoaLinq/CocoaLinq-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		4C2A3092163172C500B185FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaLinq/CocoaLinq-Prefix.pch";
+				INFOPLIST_FILE = "CocoaLinqTests/CocoaLinqTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4C2A3093163172C500B185FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaLinq/CocoaLinq-Prefix.pch";
+				INFOPLIST_FILE = "CocoaLinqTests/CocoaLinqTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C2A305D163172C500B185FF /* Build configuration list for PBXProject "CocoaLinq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C2A308C163172C500B185FF /* Debug */,
+				4C2A308D163172C500B185FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C2A308E163172C500B185FF /* Build configuration list for PBXNativeTarget "CocoaLinq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C2A308F163172C500B185FF /* Debug */,
+				4C2A3090163172C500B185FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C2A3091163172C500B185FF /* Build configuration list for PBXNativeTarget "CocoaLinqTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C2A3092163172C500B185FF /* Debug */,
+				4C2A3093163172C500B185FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C2A305A163172C500B185FF /* Project object */;
+}
