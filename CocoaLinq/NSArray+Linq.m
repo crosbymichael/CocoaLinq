@@ -96,16 +96,6 @@
     return [self _wrapWithSelector:selector];
 }
 
-- (NSArray *) skip: (linq_selector) selector {
-    return [self select:^(id item ) {
-        id result = nil;
-        if (!selector(item)) {
-            result = item;
-        }
-        return result;
-    }];
-}
-
 - (void) forEach: (void(^)(id)) action {
     for (id item in self) {
         action(item);

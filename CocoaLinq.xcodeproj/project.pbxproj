@@ -493,6 +493,7 @@
 				4C2A3090163172C500B185FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C2A3091163172C500B185FF /* Build configuration list for PBXNativeTarget "CocoaLinqTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +502,7 @@
 				4C2A3093163172C500B185FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

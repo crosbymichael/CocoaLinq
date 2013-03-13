@@ -53,11 +53,32 @@
         return [item characterAtIndex:0] == 'C';
     }];
     
+    for (NSString* item in onlyCs) {
+        STAssertTrue([item characterAtIndex:0] == 'C', @"Char at index 0 not equal to C");
+    }
+    
     STAssertTrue(onlyCs.count == 3, @"Only elments that start with C should contain 3 items");
 }
 
 - (void) testSelect {
+    NSArray * array = [[NSArray alloc] initWithObjects:
+                       @"New York",
+                       @"Chicago",
+                       @"Indianapolis",
+                       @"Center Point",
+                       @"Che",
+                       nil];
+
+    NSArray * results = [array select:^NSString *(NSString * item){
+        return item;
+    }];
     
+    results.count;
+    for (NSString* s in results) {
+        s.length;
+    }
+    
+    STAssertTrue(results.count == 5, @"Should only have 5 objects");
 }
 
 - (void) testForEach {
@@ -75,7 +96,7 @@
         count++;
     }];
     
-    STAssertTrue(count == 5, @"Should complete 5 itterations");
+    STAssertTrue(count == 5, @"Should complete 5 iterations");
 }
 
 - (void) testFirst {

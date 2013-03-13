@@ -35,6 +35,11 @@
     return backing;
 }
 
+- (NSUInteger) countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id [])buffer count:(NSUInteger)len
+{
+    return len;
+}
+
 - (id) nextObject {
     id current = [_enumerator nextObject];
     int result = 0;

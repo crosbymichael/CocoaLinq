@@ -27,7 +27,6 @@
 - (NSArray *) ofClass: (Class) class;
 - (NSArray *) where: (linq_predicate) predicate;
 - (NSArray *) select: (linq_selector) selector;
-- (NSArray *) skip: (linq_selector) selector;
 
 - (void) forEach: (void(^)(id)) action;
 
