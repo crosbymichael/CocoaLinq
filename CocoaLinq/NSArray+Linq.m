@@ -7,19 +7,19 @@
 //
 
 #import "NSArray+Linq.h"
-#import "SelectorEnumerator.h"
-#import "PredicateEnumerator.h"
+#import "ArrayFilter.h"
 #import "IEnumerable.h"
 
 @implementation NSArray (Linq)
 
 - (IEnumerable *) _wrapWithPredicate: (linq_predicate) predicate {
-    return [[IEnumerable alloc] initWithArrayAndEnumerator:self :[[PredicateEnumerator alloc] initWithPredicate:predicate]];
+    return [[IEnumerable alloc] initWithArrayAndFilter:self :
+            [[ArrayFilter alloc] initWithPredicate:predicate]];
 }
 
 - (IEnumerable *) _wrapWithSelector: (linq_selector) selector {
-    return [[IEnumerable alloc] initWithArrayAndEnumerator:self :[[SelectorEnumerator alloc] initWithSelector:selector]];
-}
+    return [[IEnumerable alloc] initWithArrayAndFilter:self :
+            [[ArrayFilter alloc] initWithSelector:selector]];}
 
 - (id) first {
     id obj = [self objectAtIndex:0];

@@ -14,23 +14,16 @@
 		4C2A3082163172C500B185FF /* CocoaLinq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A3064163172C500B185FF /* CocoaLinq.framework */; };
 		4C2A3088163172C500B185FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C2A3086163172C500B185FF /* InfoPlist.strings */; };
 		4C2A308B163172C500B185FF /* CocoaLinqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A308A163172C500B185FF /* CocoaLinqTests.m */; };
-		4C2A30971631730300B185FF /* LinqEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30951631730300B185FF /* LinqEnumerator.h */; };
-		4C2A30981631730300B185FF /* LinqEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30961631730300B185FF /* LinqEnumerator.m */; };
-		4C2A30991631730300B185FF /* LinqEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30961631730300B185FF /* LinqEnumerator.m */; };
-		4C2A309B1631734400B185FF /* IEnumeratorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A309A1631734400B185FF /* IEnumeratorDelegate.h */; };
-		4C2A309E163173CA00B185FF /* PredicateEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A309C163173CA00B185FF /* PredicateEnumerator.h */; };
-		4C2A309F163173CA00B185FF /* PredicateEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A309D163173CA00B185FF /* PredicateEnumerator.m */; };
-		4C2A30A0163173CA00B185FF /* PredicateEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A309D163173CA00B185FF /* PredicateEnumerator.m */; };
 		4C2A30A2163173E400B185FF /* Structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30A1163173E400B185FF /* Structs.h */; };
-		4C2A30A51631745900B185FF /* SelectorEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30A31631745900B185FF /* SelectorEnumerator.h */; };
-		4C2A30A61631745900B185FF /* SelectorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30A41631745900B185FF /* SelectorEnumerator.m */; };
-		4C2A30A71631745900B185FF /* SelectorEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30A41631745900B185FF /* SelectorEnumerator.m */; };
 		4C2A30AA163174A400B185FF /* IEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30A8163174A400B185FF /* IEnumerable.h */; };
 		4C2A30AB163174A400B185FF /* IEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30A9163174A400B185FF /* IEnumerable.m */; };
 		4C2A30AC163174A400B185FF /* IEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30A9163174A400B185FF /* IEnumerable.m */; };
 		4C2A30AF1631754300B185FF /* NSArray+Linq.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2A30AD1631754300B185FF /* NSArray+Linq.h */; };
 		4C2A30B01631754300B185FF /* NSArray+Linq.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30AE1631754300B185FF /* NSArray+Linq.m */; };
 		4C2A30B11631754300B185FF /* NSArray+Linq.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A30AE1631754300B185FF /* NSArray+Linq.m */; };
+		4C46608416F039760088B0B5 /* ArrayFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C46608216F039760088B0B5 /* ArrayFilter.h */; };
+		4C46608516F039760088B0B5 /* ArrayFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C46608316F039760088B0B5 /* ArrayFilter.m */; };
+		4C46608616F039760088B0B5 /* ArrayFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C46608316F039760088B0B5 /* ArrayFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,18 +51,13 @@
 		4C2A3087163172C500B185FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C2A3089163172C500B185FF /* CocoaLinqTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaLinqTests.h; sourceTree = "<group>"; };
 		4C2A308A163172C500B185FF /* CocoaLinqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaLinqTests.m; sourceTree = "<group>"; };
-		4C2A30951631730300B185FF /* LinqEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinqEnumerator.h; sourceTree = "<group>"; };
-		4C2A30961631730300B185FF /* LinqEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqEnumerator.m; sourceTree = "<group>"; };
-		4C2A309A1631734400B185FF /* IEnumeratorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEnumeratorDelegate.h; sourceTree = "<group>"; };
-		4C2A309C163173CA00B185FF /* PredicateEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateEnumerator.h; sourceTree = "<group>"; };
-		4C2A309D163173CA00B185FF /* PredicateEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateEnumerator.m; sourceTree = "<group>"; };
 		4C2A30A1163173E400B185FF /* Structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Structs.h; sourceTree = "<group>"; };
-		4C2A30A31631745900B185FF /* SelectorEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorEnumerator.h; sourceTree = "<group>"; };
-		4C2A30A41631745900B185FF /* SelectorEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorEnumerator.m; sourceTree = "<group>"; };
 		4C2A30A8163174A400B185FF /* IEnumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEnumerable.h; sourceTree = "<group>"; };
 		4C2A30A9163174A400B185FF /* IEnumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEnumerable.m; sourceTree = "<group>"; };
 		4C2A30AD1631754300B185FF /* NSArray+Linq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Linq.h"; sourceTree = "<group>"; };
 		4C2A30AE1631754300B185FF /* NSArray+Linq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Linq.m"; sourceTree = "<group>"; };
+		4C46608216F039760088B0B5 /* ArrayFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayFilter.h; sourceTree = "<group>"; };
+		4C46608316F039760088B0B5 /* ArrayFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,13 +124,14 @@
 		4C2A306D163172C500B185FF /* CocoaLinq */ = {
 			isa = PBXGroup;
 			children = (
-				4C2A3094163172E100B185FF /* Enumerator */,
 				4C2A306E163172C500B185FF /* Supporting Files */,
 				4C2A30A1163173E400B185FF /* Structs.h */,
 				4C2A30A8163174A400B185FF /* IEnumerable.h */,
 				4C2A30A9163174A400B185FF /* IEnumerable.m */,
 				4C2A30AD1631754300B185FF /* NSArray+Linq.h */,
 				4C2A30AE1631754300B185FF /* NSArray+Linq.m */,
+				4C46608216F039760088B0B5 /* ArrayFilter.h */,
+				4C46608316F039760088B0B5 /* ArrayFilter.m */,
 			);
 			path = CocoaLinq;
 			sourceTree = "<group>";
@@ -176,20 +165,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4C2A3094163172E100B185FF /* Enumerator */ = {
-			isa = PBXGroup;
-			children = (
-				4C2A30951631730300B185FF /* LinqEnumerator.h */,
-				4C2A30961631730300B185FF /* LinqEnumerator.m */,
-				4C2A309A1631734400B185FF /* IEnumeratorDelegate.h */,
-				4C2A309C163173CA00B185FF /* PredicateEnumerator.h */,
-				4C2A309D163173CA00B185FF /* PredicateEnumerator.m */,
-				4C2A30A31631745900B185FF /* SelectorEnumerator.h */,
-				4C2A30A41631745900B185FF /* SelectorEnumerator.m */,
-			);
-			name = Enumerator;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -197,13 +172,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2A30971631730300B185FF /* LinqEnumerator.h in Headers */,
-				4C2A309B1631734400B185FF /* IEnumeratorDelegate.h in Headers */,
-				4C2A309E163173CA00B185FF /* PredicateEnumerator.h in Headers */,
 				4C2A30A2163173E400B185FF /* Structs.h in Headers */,
-				4C2A30A51631745900B185FF /* SelectorEnumerator.h in Headers */,
 				4C2A30AA163174A400B185FF /* IEnumerable.h in Headers */,
 				4C2A30AF1631754300B185FF /* NSArray+Linq.h in Headers */,
+				4C46608416F039760088B0B5 /* ArrayFilter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,11 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2A30981631730300B185FF /* LinqEnumerator.m in Sources */,
-				4C2A309F163173CA00B185FF /* PredicateEnumerator.m in Sources */,
-				4C2A30A61631745900B185FF /* SelectorEnumerator.m in Sources */,
 				4C2A30AB163174A400B185FF /* IEnumerable.m in Sources */,
 				4C2A30B01631754300B185FF /* NSArray+Linq.m in Sources */,
+				4C46608516F039760088B0B5 /* ArrayFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,11 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2A308B163172C500B185FF /* CocoaLinqTests.m in Sources */,
-				4C2A30991631730300B185FF /* LinqEnumerator.m in Sources */,
-				4C2A30A0163173CA00B185FF /* PredicateEnumerator.m in Sources */,
-				4C2A30A71631745900B185FF /* SelectorEnumerator.m in Sources */,
 				4C2A30AC163174A400B185FF /* IEnumerable.m in Sources */,
 				4C2A30B11631754300B185FF /* NSArray+Linq.m in Sources */,
+				4C46608616F039760088B0B5 /* ArrayFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
