@@ -17,11 +17,11 @@
 
 @implementation IEnumerable
 
-- (id) initWithArrayAndFilter:(NSArray *)array: (ArrayFilter *) filter {
+- (id) initWithArrayAndFilter:(NSArray *)parent: (ArrayFilter *) filter {
     self = [super init];
     if (self) {
         _filter = filter;
-        _parent = array;
+        _parent = parent;
     }
     return self;
 }
@@ -44,6 +44,14 @@
 
 - (void) enumerateObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts usingBlock:(void (^)(id, NSUInteger, BOOL *))block {
     [[self getResults] enumerateObjectsAtIndexes:s options:opts usingBlock:block];
+}
+
+- (void) enumerateObjectsUsingBlock:(void (^)(id, NSUInteger, BOOL *))block {
+    [[self getResults] enumerateObjectsUsingBlock:block];
+}
+
+- (void) enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id, NSUInteger, BOOL *))block {
+    [[self getResults] enumerateObjectsWithOptions:opts usingBlock:block];
 }
 
 @end

@@ -12,6 +12,6 @@
 
 @interface IEnumerable : NSArray
 
-- (id) initWithArrayAndFilter:(NSArray *)array: (ArrayFilter *) filter;
+- (id) initWithArrayAndFilter:(NSArray *)parent: (ArrayFilter *) filter;
 
 @end

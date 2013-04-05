@@ -73,9 +73,8 @@
         return item;
     }];
     
-    results.count;
     for (NSString* s in results) {
-        s.length;
+
     }
     
     STAssertTrue(results.count == 5, @"Should only have 5 objects");
