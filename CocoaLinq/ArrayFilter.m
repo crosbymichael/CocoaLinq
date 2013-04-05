@@ -38,7 +38,7 @@
     id result = nil;
     for (id obj in array) {
         if ((result = [self getObjectToAdd:obj]) != nil) {
-            [backing addObject:obj];
+            [backing addObject:result];
         }
     }
     return backing;

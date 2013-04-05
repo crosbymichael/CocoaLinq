@@ -69,12 +69,14 @@
                        @"Che",
                        nil];
 
+    NSRange range = NSMakeRange(0, 2);
     NSArray * results = [array select:^NSString *(NSString * item){
-        return item;
+        return [item substringWithRange:range];
     }];
     
+    NSInteger length = 2;
     for (NSString* s in results) {
-
+        STAssertTrue(s.length == length, @"Should only be two chars long %d", s.length);
     }
     
     STAssertTrue(results.count == 5, @"Should only have 5 objects");
