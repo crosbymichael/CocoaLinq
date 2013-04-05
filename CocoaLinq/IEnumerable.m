@@ -10,73 +10,48 @@
 
 @interface IEnumerable() {
     NSArray * _parent;
-    LinqEnumerator * _enumerator;
-    NSMutableArray * _cache;
-    enumeration_state _state;
+    ArrayFilter * _filter;
 }
 
 @end
 
 @implementation IEnumerable
 
-- (void) _populateCache {
-    if (_state != complete || _state != inprogress) {
-        _state = inprogress;
-        _cache = [_enumerator filterArrray:_parent];
-        _state = complete;
-    }
-}
-
-- (id) initWithArrayAndEnumerator:(NSArray *)array: (LinqEnumerator *) enumerator {
+- (id) initWithArrayAndFilter:(NSArray *)parent: (ArrayFilter *) filter {
     self = [super init];
     if (self) {
-        _enumerator = enumerator;
-        [_enumerator setDelegate:self];
-        _parent = array;
-        _state = pending;
+        _filter = filter;
+        _parent = parent;
     }
     return self;
 }
 
-- (void) currentObject:(id)obj {
-    if (_state == inprogress) {
-        [_cache addObject:obj];
-    }
-}
-
-- (void) enumerationComplete {
-    _state = complete;
+- (NSArray *) getResults {
+    return [_filter filterArray:_parent];
 }
 
 - (NSUInteger) count {
-    if (_state != complete) {
-        [self _populateCache];
-    }
-    return _cache.count;
+    return [self getResults].count;
 }
 
 - (id) objectAtIndex:(NSUInteger)index {
-    if (_state != complete) {
-        [self _populateCache];
-    }
-    return [_cache objectAtIndex:index];
+    return [[self getResults] objectAtIndex:index];
 }
 
-- (NSEnumerator*) objectEnumerator {
-    NSEnumerator * enumerator = nil;
-    if (_state == complete) {
-        enumerator = [_cache objectEnumerator];
-    } else {
-        if (![_enumerator hasEnumerator]) {
-            [_enumerator setEnumerator:_parent];
-        }
-        _state = inprogress;
-        
-        // Initalize the cache so that it is ready to be populated
-        _cache = [[NSMutableArray alloc] initWithCapacity:_parent.count];
-        enumerator = _enumerator;
-    }
-    return  enumerator;
+- (id) objectAtIndexedSubscript:(NSUInteger)idx {
+    return [[self getResults] objectAtIndexedSubscript:idx];
+}
+
+- (void) enumerateObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts usingBlock:(void (^)(id, NSUInteger, BOOL *))block {
+    [[self getResults] enumerateObjectsAtIndexes:s options:opts usingBlock:block];
+}
+
+- (void) enumerateObjectsUsingBlock:(void (^)(id, NSUInteger, BOOL *))block {
+    [[self getResults] enumerateObjectsUsingBlock:block];
+}
+
+- (void) enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id, NSUInteger, BOOL *))block {
+    [[self getResults] enumerateObjectsWithOptions:opts usingBlock:block];
 }
 
 @end

@@ -73,12 +73,29 @@
         return item;
     }];
     
-    results.count;
     for (NSString* s in results) {
-        s.length;
+
     }
     
     STAssertTrue(results.count == 5, @"Should only have 5 objects");
+}
+
+- (void) testChain {
+    NSArray * array = [[NSArray alloc] initWithObjects:
+                       @"New York",
+                       @"Chicago",
+                       @"Indianapolis",
+                       [[NSNumber alloc] initWithInt:2],
+                       [[NSNumber alloc] initWithInt:66],
+                       [[NSNumber alloc] initWithInt:22],
+                       nil];
+    
+    NSArray * strings = [array ofClass:[NSString class]];
+    strings = [strings where:^(NSString * item) {
+        return [item characterAtIndex:0] == 'C';
+    }];
+    
+    STAssertTrue(strings.count == 1, @"Should only have 5 objects");
 }
 
 - (void) testForEach {

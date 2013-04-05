@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IEnumeratorDelegate.h"
-#import "LinqEnumerator.h"
 #import "Structs.h"
+#import "ArrayFilter.h"
 
-@interface IEnumerable : NSArray <IEnumeratorDelegate>
+@interface IEnumerable : NSArray
 
-- (id) initWithArrayAndEnumerator:(NSArray *)array: (LinqEnumerator *) enumerator;
+- (id) initWithArrayAndFilter:(NSArray *)parent: (ArrayFilter *) filter;
 
 @end
